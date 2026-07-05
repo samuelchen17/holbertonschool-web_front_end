@@ -395,6 +395,7 @@ template {
   --nav-item-display: inline-block;
   --nav-item-margin: 0 0 3rem 0;
   --nav-item-link-hover: var(--color-primary);
+  --nav-item-link-hover: var(--color-white);
 
   --button-display: inline-block;
   --button-padding: 1.5rem 3rem;
@@ -550,10 +551,6 @@ a:active {
   color: var(--nav-item-link-hover);
 }
 
-.nav-item-link:hover {
-  color: var(--color-white);
-}
-
 .nav .nav-link::before {
   content: "";
   position: absolute;
@@ -561,13 +558,17 @@ a:active {
   left: 0;
   background-color: var(--color-white);
   width: 0;
-  height: 20%;
+  height: 0.2rem; 
+  transition:
+    width 0.3s ease,
+    background-color 0.3s ease;
 }
 
-.nav-item:hover .nav-link::before {
+.nav .nav-item:hover .nav-link::before {
   background-color: var(--color-primary);
   width: 100%;
 }
+
 
 ul.row {
   margin: 0;
