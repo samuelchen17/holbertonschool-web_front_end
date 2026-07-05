@@ -478,10 +478,6 @@ a:active {
   margin: var(--section-tagline-margin);
 }
 
-.section-header {
-  text-align: var(--section-header-align);
-}
-
 .section-title {
   font-family: var(--font-family-title);
   font-size: var(--font-size-xx-large);
@@ -578,6 +574,6 @@ ul.row {
   display: block;
 }
 
-.social-link svg {
+.social-link > svg {
   fill: var(--text-color);
 }
