@@ -49,6 +49,7 @@ h6 {
 
 a {
   color: var(--text-color);
+  text-decoration: none;
 }
 
 .visually-hidden {
