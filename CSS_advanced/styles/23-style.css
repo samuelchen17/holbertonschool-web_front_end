@@ -559,10 +559,6 @@ ul.row {
 }
 
 .footer-address {
-  color: text-color;
-}
-
-.footer-address {
   color: var(--text-color);
 }
 
