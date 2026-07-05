@@ -51,7 +51,10 @@ h6 {
   font-family: var(--font-family-title);
   font-weight: var(--font-weight-bold);
 }
+
 a[href] {
+  color: var(--text-color);
+  text-decoration: none;
 }
 
 a[href]:visited {
@@ -64,11 +67,6 @@ a[href]:hover {
 
 a[href]:active {
   background-color: var(--color-light-grey);
-}
-
-a {
-  color: var(--text-color);
-  text-decoration: none;
 }
 
 .visually-hidden {
